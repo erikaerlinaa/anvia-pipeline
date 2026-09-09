@@ -4,7 +4,9 @@
   "description": "Day 3 tasks - shared setup, one entrypoint per task under src/ (01, 02, ...)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "task1": "tsx ./src/01-article-refiner-pipeline.ts",
+    "task2": "tsx ./src/02-idea-review-board.ts",
+    "task3": "tsx ./src/03-ticket-triage-router.ts"
   },
   "keywords": [],
   "author": "",

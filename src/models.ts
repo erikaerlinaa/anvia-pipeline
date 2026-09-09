@@ -1,9 +1,16 @@
 import "dotenv/config";
 import { OpenAIClient } from "@anvia/openai";
 
+// validate api key
+const apiKey = process.env.LLM_API_KEY;
+
+if (!apiKey) {
+  throw new Error("LLM_API_KEY is empty in .env");
+}
+
 const client = new OpenAIClient({
-  apiKey: process.env.OPENAI_API_KEY!,
-  baseUrl: process.env.OPENAI_BASE_URL,
+  apiKey: apiKey,
+  baseUrl: process.env.LLM_API_BASE_URL,
 });
 
 // Model

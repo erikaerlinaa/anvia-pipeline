@@ -1,7 +1,6 @@
 import { generateCompletion } from "@anvia/core";
 import { model } from "./models.js";
 import z from "zod";
-import "dotenv/config";
 
 const DraftSchema = z.object({
   draft: z.string(),
