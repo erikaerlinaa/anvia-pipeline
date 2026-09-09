@@ -1,0 +1,32 @@
+{
+  "name": "day3-tasks",
+  "version": "1.0.0",
+  "description": "Day 3 tasks - shared setup, one entrypoint per task under src/ (01, 02, ...)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.22.0",
+      "onFail": "download"
+    }
+  },
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^26.4.0",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "@anvia/core": "^1.0.9",
+    "@anvia/openai": "^1.0.9",
+    "@anvia/studio": "^1.0.14",
+    "dotenv": "^17.4.2",
+    "zod": "^4.5.4"
+  }
+}
